@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Camtasy::VERSION
   spec.authors       = ["mo khan"]
   spec.email         = ["mo@mokhan.ca"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{playing with webcams.}
+  spec.description   = %q{no kidding... i'm just messing around with webcams.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
