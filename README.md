@@ -1,24 +1,16 @@
 # Camtasy
 
-TODO: Write a gem description
+A fancy dancy cam server based on the gorgeous work of that lovely
+[tenderlove](http://tenderlovemaking.com/2014/03/26/webcam-photos-with-ruby.html)
 
 ## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'camtasy'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
 
     $ gem install camtasy
 
 ## Usage
 
-TODO: Write usage instructions here
+    $ camtasy server
+    $ camtasy client | open -f -a /Applications/Preview.app
 
 ## Contributing
 
