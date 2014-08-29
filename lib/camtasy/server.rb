@@ -15,7 +15,7 @@ module Camtasy
       end
     end
 
-    def run
+    def run(uri)
       Thread.new do
         AVCapture::Session.new.run_with(AVCapture.devices.find(&:video?)) do |connection|
           while server.request.pop
@@ -24,10 +24,8 @@ module Camtasy
         end
       end
 
-      DRb.start_service('druby://localhost:8787', server)
+      DRb.start_service(uri, server)
       DRb.thread.join
     end
   end
 end
-
-PhotoServer.new.run

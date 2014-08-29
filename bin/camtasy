@@ -1,3 +1,16 @@
 #!/usr/bin/env ruby
 
 require 'camtasy'
+require "thor"
+
+module Camtasy
+  class CLI < Thor
+    desc 'server', 'starts a server.'
+    def server
+      #PhotoServer.new.run('druby://localhost:8787')
+      puts "server"
+    end
+  end
+end
+
+Camtasy::CLI.start
